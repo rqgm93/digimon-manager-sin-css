@@ -1,0 +1,11 @@
+
+<div class="container">
+  <h2>Add Digimon</h2>
+  <input #digimonName type="text" placeholder="Nombre" />   
+  <input #digimonType type="text" placeholder="Tipo" />    
+  <input #digimonAttack type="text" placeholder="Ataque" />    
+  <textarea #digimonDesc type="text" placeholder="Descripción"></textarea>    
+  <button (click)="addDigimons(digimonName.value, digimonType.value, 
+  digimonDesc.value, digimonAttack.value); digimonName.value=''; 
+  digimonType.value=''; digimonDesc.value=''; digimonAttack.value='';">Add digimon</button>
+</div>

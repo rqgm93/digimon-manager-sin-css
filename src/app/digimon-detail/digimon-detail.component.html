@@ -1,0 +1,17 @@
+
+<div class="digimon-detail-container">
+  <div class="digimon-header">
+    <h2>Digimon Details</h2>
+  </div>
+  <div *ngIf="digimon" class="digimon-detail-card">
+    <img [src]="digimon.image" alt="{{ digimon.name }}" class="digimon-image">
+    <h3>{{ digimon.name }}</h3>
+    <p><strong>Type:</strong> {{ digimon.type }}</p>
+    <p><strong>Description:</strong> {{ digimon.description }}</p>
+    <h4>Attacks</h4>
+    <ul class="attacks-list">
+      <li *ngFor="let attack of digimon.attacks">{{ attack }}</li>
+    </ul>
+    <a routerLink="/list">Volver a la lista</a>
+  </div>
+</div>

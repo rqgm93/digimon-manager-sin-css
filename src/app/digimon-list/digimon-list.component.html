@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Digimon List</h2>
+  <p *ngIf="digimons.length === 0">No hay Digimons, se han escapado</p>
+  <ul>
+    <li *ngFor="let digimon of digimons;">
+      {{ digimon.name }} - Type: {{ digimon.type }}
+      <div>
+        <button id="detail-button" (click)="viewDigimon(digimon.id)">Detalles</button>
+        <button id="delete-button" (click)="deleteDigimons(digimon.id)">Eliminar</button>
+      </div>
+    </li>
+  </ul>
+</div>
+  

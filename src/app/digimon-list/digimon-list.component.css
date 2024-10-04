@@ -1,0 +1,44 @@
+  /* Estilos para la lista de Digimons */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .digimon-section{
+    display: flex;
+  }
+  
+  .digimon-section li {
+    background-color: #e0f0ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #detail-button {
+    background-color: #003366;
+    margin-right: 10px;
+  }
+  
+  #detail-button:hover {
+    background-color: #001f33;
+  }  
+  
+  #delete-button {
+    background-color: #ff3333;
+    margin-right: 10px;
+  }
+
+  #delete-button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Mensaje de lista vacía */
+  p {
+    font-size: 18px;
+    color: #cc0000;
+  }
+
